@@ -1,0 +1,19 @@
+- hosts: NODES
+  
+  order: sorted
+
+  tasks:
+
+    - name: Update Apt Cache
+      apt:
+        update_cache: yes
+      become: yes
+      become_method: su
+
+    - name: Install Htop
+      apt:
+        name: htop
+        state: latest
+      become: yes
+      become_method: su
+      
