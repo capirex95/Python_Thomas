@@ -1,0 +1,6 @@
+#Pour definir un groupe, on le met entre crochets :
+
+[NODES]
+
+192.168.24.137 ansible_user=thomas
+192.168.24.138 ansible_user=thomas
