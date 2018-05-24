@@ -17,3 +17,23 @@
       become: yes
       become_method: su
       
+     - name: Install tshark
+      apt:
+        name: tshark
+        state: latest
+      become: yes
+      become_method: su
+      
+    - name: Install resolvconf
+      apt:
+        name: resolvconf
+        state: latest
+      become: yes
+      become_method: su
+      
+    - name: Install tcpdump
+      apt:
+        name: tcpdump
+        state: latest
+      become: yes
+      become_method: su      
